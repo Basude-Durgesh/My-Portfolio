@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CyberSecurity Analyst | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<style>
+  /* Global Styles */
+  * { box-sizing: border-box; margin:0; padding:0;}
+  body {font-family:'Roboto', sans-serif; background:#0d0d0d; color:#f0f0f0; line-height:1.6; scroll-behavior:smooth;}
+  a {text-decoration:none; color:inherit;}
+  img {max-width:100%; display:block;}
+  section {padding:80px 10%;}
+  h1,h2,h3 {font-family:'Montserrat', sans-serif; margin-bottom:20px;}
+  button {cursor:pointer;}
+
+  /* Header */
+  header {display:flex; align-items:center; justify-content:space-between; padding:20px 10%; background:#111; position:sticky; top:0; z-index:1000;}
+  header nav a {margin:0 15px; font-weight:500; transition:color 0.3s;}
+  header nav a:hover {color:#00ffff;}
+
+  /* Hero */
+  .hero {display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap;}
+  .hero-text {max-width:600px;}
+  .hero-text h1 {font-size:3rem; margin-bottom:20px; color:#00ffff;}
+  .hero-text p {font-size:1.2rem; margin-bottom:20px;}
+  .hero-text button {padding:12px 25px; background:#00ffff; border:none; color:#000; font-weight:bold; border-radius:5px; transition:transform 0.3s;}
+  .hero-text button:hover {transform:scale(1.05);}
+  .hero-img img {border-radius:50%; width:250px; border:4px solid #00ffff;}
+
+  /* About */
+  .about {display:flex; flex-wrap:wrap; gap:40px; align-items:center;}
+  .about-text {flex:1;}
+  .about-images {flex:1; display:flex; gap:20px;}
+  .about-images img {width:45%; border-radius:10px;}
+  .skills {margin-top:30px;}
+  .skill {margin-bottom:15px;}
+  .skill-name {margin-bottom:5px;}
+  .skill-bar {width:100%; background:#222; border-radius:10px; overflow:hidden;}
+  .skill-progress {height:15px; width:0; background:#00ffff; border-radius:10px; transition:width 1.5s ease-in-out;}
+
+  /* Portfolio */
+  .portfolio-grid {display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:20px;}
+  .project {background:#111; padding:15px; border-radius:10px; transition:transform 0.3s;}
+  .project:hover {transform:scale(1.03);}
+
+  /* Resume Timeline */
+  .timeline {position:relative; padding-left:40px;}
+  .timeline::before {content:''; position:absolute; left:15px; top:0; bottom:0; width:4px; background:#00ffff; border-radius:2px;}
+  .timeline-item {position:relative; margin-bottom:40px;}
+  .timeline-item::before {content:''; position:absolute; left:-10px; top:0; width:20px; height:20px; background:#00ffff; border-radius:50%; border:3px solid #111;}
+  .timeline-item h3 {margin-bottom:5px;}
+  .timeline-item span {font-size:0.9rem; color:#aaa;}
+
+  /* Testimonials */
+  .testimonials {display:flex; gap:20px; flex-wrap:wrap;}
+  .testimonial {background:#111; padding:20px; border-radius:10px; flex:1; min-width:250px;}
+
+  /* Blog */
+  .blog-grid {display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:20px;}
+  .blog-card {background:#111; border-radius:10px; overflow:hidden; transition:transform 0.3s;}
+  .blog-card:hover {transform:scale(1.03);}
+  .blog-card img {width:100%;}
+  .blog-card-content {padding:15px;}
+
+  /* Contact */
+  .contact-form {display:flex; flex-direction:column; gap:15px; max-width:500px;}
+  .contact-form input, .contact-form textarea {padding:10px; border:none; border-radius:5px; background:#222; color:#f0f0f0;}
+  .contact-form button {padding:12px; background:#00ffff; border:none; color:#000; font-weight:bold; border-radius:5px; transition:transform 0.3s;}
+  .contact-form button:hover {transform:scale(1.05);}
+
+  /* Footer */
+  footer {background:#111; text-align:center; padding:20px; color:#aaa;}
+
+  /* Toggle */
+  .toggle-btn {position:fixed; top:20px; right:20px; padding:10px 15px; border-radius:5px; background:#00ffff; color:#000; border:none; font-weight:bold; z-index:1001; cursor:pointer;}
+
+  /* Responsive */
+  @media(max-width:900px) {.hero{flex-direction:column;text-align:center;}.about{flex-direction:column;}.about-images{justify-content:center;}}
+</style>
+</head>
+<body>
+<button class="toggle-btn" onclick="toggleTheme()">Light/Dark</button>
+
+<header>
+  <h2>My Portfolio</h2>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="hero-text">
+    <h1>John Doe</h1>
+    <p>CyberSecurity Analyst | Protecting Digital Futures</p>
+    <button onclick="document.getElementById('portfolio').scrollIntoView({behavior:'smooth'})">View Portfolio</button>
+  </div>
+  <div class="hero-img">
+    <img src="images/profile.jpg" alt="Profile Photo">
+  </div>
+</section>
+
+<!-- About -->
+<section id="about">
+<h2>About Me</h2>
+<div class="about">
+  <div class="about-text">
+    <p>Passionate cybersecurity analyst with experience in protecting networks, detecting vulnerabilities, and enhancing digital safety.</p>
+    <p>Hobbyist hacker, tech enthusiast, and lifelong learner.</p>
+    <div class="skills">
+      <div class="skill">
+        <div class="skill-name">Network Security</div>
+        <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">Penetration Testing</div>
+        <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">Python Programming</div>
+        <div class="skill-bar"><div class="skill-progress" data-width="80%"></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="about-images">
+    <img src="photo1.jpg" alt="Working Photo">
+    <img src="photo2.jpg" alt="Casual Photo">
+  </div>
+</div>
+</section>
+
+<!-- Resume -->
+<section id="resume">
+<h2>Resume & Experience</h2>
+<div class="timeline">
+  <div class="timeline-item">
+    <h3>CyberSecurity Analyst - XYZ Corp</h3>
+    <span>2022 - Present</span>
+    <p>Managed network security, monitored threats, and implemented mitigation strategies.</p>
+  </div>
+  <div class="timeline-item">
+    <h3>Junior Security Analyst - ABC Ltd</h3>
+    <span>2020 - 2022</span>
+    <p>Assisted in penetration testing and security audits for clients.</p>
+  </div>
+</div>
+<button onclick="alert('Download CV functionality placeholder')">Download CV</button>
+</section>
+
+<!-- Testimonials -->
+<section id="testimonials">
+<h2>Testimonials</h2>
+<div class="testimonials">
+  <div class="testimonial">
+    <p>"John is an exceptional cybersecurity professional who secured our network efficiently."</p>
+    <strong>Jane Smith, CTO</strong>
+  </div>
+  <div class="testimonial">
+    <p>"Highly skilled, proactive, and detail-oriented. A pleasure to work with."</p>
+    <strong>Mike Johnson, Manager</strong>
+  </div>
+</div>
+</section>
+
+<!-- Blog -->
+<section id="blog">
+<h2>Blog / Insights</h2>
+<div class="blog-grid">
+  <div class="blog-card">
+    <img src="blog1.jpg" alt="Blog 1">
+    <div class="blog-card-content">
+      <h3>Top 5 Network Security Tips</h3>
+      <p>Learn how to secure your organization against common cyber threats.</p>
+    </div>
+  </div>
+  <div class="blog-card">
+    <img src="blog2.jpg" alt="Blog 2">
+    <div class="blog-card-content">
+      <h3>Understanding Penetration Testing</h3>
+      <p>A beginner's guide to ethical hacking and penetration testing.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+<h2>Contact Me</h2>
+<div class="contact-form">
+  <input type="text" placeholder="Name">
+  <input type="email" placeholder="Email">
+  <textarea rows="5" placeholder="Message"></textarea>
+  <button>Get in Touch</button>
+</div>
+</section>
+
+<!-- Footer -->
+<footer>
+<p>&copy; 2025 John Doe | All rights reserved</p>
+<p>Follow me on: <a href="#">LinkedIn</a> | <a href="#">Twitter</a> | <a href="#">GitHub</a></p>
+</footer>
+
+<script>
+  // Animate skill bars
+  const skills = document.querySelectorAll('.skill-progress');
+  window.addEventListener('scroll', () => {
+    skills.forEach(skill => {
+      const skillTop = skill.getBoundingClientRect().top;
+      const trigger = window.innerHeight - 50;
+      if(skillTop < trigger) {
+        skill.style.width = skill.dataset.width;
+      }
+    });
+  });
+
+  // Light/Dark mode toggle
+  function toggleTheme() {
+    document.body.classList.toggle('light-mode');
+    if(document.body.classList.contains('light-mode')){
+      document.body.style.background = '#f0f0f0';
+      document.body.style.color = '#111';
+    } else {
+      document.body.style.background = '#0d0d0d';
+      document.body.style.color = '#f0f0f0';
+    }
+  }
+</script>
+</body>
+</html>
