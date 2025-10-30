@@ -1,2 +1,19 @@
-# My-Portfolio
-Personal portfolio website of Basude Durgesh – Cybersecurity Analyst.
+# [Basude Durgesh] - CyberSecurity Analyst
+
+Personal portfolio showcasing my Skills and Experience in Cybersecurity.
+
+## About Me
+- Skills: [SIEM, Endpoint Detection and Response (EDR), Data Loss Prevention (DLP), Incident Response, Phishing Analysis]  
+- Dedicated SOC Analyst with expertise in threat detection, incident response, and network security. Passionate about safeguarding digital systems and lifelong learning.
+
+## Experience
+- [SOC Analyst] – [ISSQUARED INDIA PRIVATE LIMITED – Hyderabad, Telangana] | [2 Years]  
+  [Hands-on experience in identifying, analyzing, and mitigating cybersecurity threats across multiple platforms. Skilled in security monitoring, incident response, vulnerability assessment, and risk management. Proficient with SIEM tools and network monitoring software to detect and respond to threats]   
+
+## Contact
+- Email: [BASUDEDURGESH@GMAIL.COM]  
+- LinkedIn: [https://www.linkedin.com/in/basude-durgesh]  
+- GitHub: [https://github.com/Basude-Durgesh]  
+
+## Live Website
+[https://github.com/Basude-Durgesh/My-Portfolio]
