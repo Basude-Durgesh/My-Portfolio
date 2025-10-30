@@ -14,6 +14,7 @@
   <h2>Basude Durgesh</h2>
   <nav>
     <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
     <a href="#resume">Resume</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -24,9 +25,10 @@
   <div class="hero-text">
     <h1>Basude Durgesh</h1>
     <p>CyberSecurity Analyst | Protecting Digital Futures</p>
+    <button onclick="document.getElementById('portfolio').scrollIntoView({behavior:'smooth'})">View Portfolio</button>
   </div>
   <div class="hero-img">
-    <img src="images/profile.jpg" alt="Profile Photo">
+    <img src="my-portfolio/images/profile.JPG" alt="Profile Photo">
   </div>
 </section>
 
@@ -53,8 +55,8 @@
     </div>
   </div>
   <div class="about-images">
-    <img src="images/photo1.jpg" alt="Working Photo">
-    <img src="images/photo2.jpg" alt="Casual Photo">
+    <img src="my-portfolio/images/photo1.jpg" alt="Working Photo">
+    <img src="my-portfolio/images/project1.jpg" alt="Casual Photo">
   </div>
 </div>
 </section>
@@ -82,4 +84,33 @@
 <h2>Testimonials</h2>
 <div class="testimonials">
   <div class="testimonial">
-    <p>"Basude is an exceptional cybersecurity professional who secured our network efficie
+    <p>"Basude is an exceptional cybersecurity professional who secured our network efficiently."</p>
+    <strong>Jane Smith, CTO</strong>
+  </div>
+  <div class="testimonial">
+    <p>"Highly skilled, proactive, and detail-oriented. A pleasure to work with."</p>
+    <strong>Mike Johnson, Manager</strong>
+  </div>
+</div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+<h2>Contact Me</h2>
+<div class="contact-form">
+  <input type="text" placeholder="Name">
+  <input type="email" placeholder="Email">
+  <textarea rows="5" placeholder="Message"></textarea>
+  <button>Get in Touch</button>
+</div>
+</section>
+
+<!-- Footer -->
+<footer>
+<p>&copy; 2025 Basude Durgesh | All rights reserved</p>
+<p>Follow me on: <a href="#">LinkedIn</a> | <a href="#">Twitter</a> | <a href="#">GitHub</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
